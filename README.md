@@ -64,7 +64,8 @@ or
 2. Install dependencies:
 
    ```bash
-   bun    ```
+   bun i
+   ```
 
 ### Build
 
