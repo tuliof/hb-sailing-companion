@@ -25,8 +25,7 @@
 	"content_scripts": [
 		{
 			"matches": ["https://www.hbsailing.com/*"],
-			"js": ["src/pages/content/index.tsx"],
-			"css": ["src/pages/content/content.css"]
+			"js": ["src/pages/content/index.tsx"]
 		}
 	],
 	"background": {
