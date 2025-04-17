@@ -14,9 +14,9 @@
 		"dev": "nodemon --config nodemon.chrome.json",
 		"dev:chrome": "nodemon --config nodemon.chrome.json",
 		"dev:firefox": "nodemon --config nodemon.firefox.json",
-		"test": "bun test",
-		"lint": "biome lint",
-		"format": "biome format"
+		"lint": "biome lint --fix",
+		"format": "biome format --fix",
+		"report": "biome check --reporter=summary"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
