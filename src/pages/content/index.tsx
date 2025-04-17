@@ -1,5 +1,5 @@
 import React from 'react'
-import '@assets/tailwind.css'
+import './content.css' // Import the content-specific CSS
 import ReactDOM from 'react-dom/client'
 import { Content } from './content'
 
