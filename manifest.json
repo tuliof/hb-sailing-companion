@@ -4,7 +4,6 @@
 	"name": "HB Sailing Companion",
 	"version": "1.0",
 	"description": "Enhance the HB Sailing website.",
-	"author": "tulio@fervo.io",
 	"permissions": ["activeTab"],
 	"host_permissions": ["https://www.hbsailing.com/*"],
 	"content_security_policy": {
