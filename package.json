@@ -1,6 +1,10 @@
 {
-	"name": "hb-sailing-extension",
+	"name": "hb-sailing-companion",
 	"version": "1.0.0",
+	"author": {
+		"name": "Tulio Fernandes",
+		"email": "tulio@fervo.io"
+	},
 	"description": "Enhance the HB Sailing website.",
 	"type": "module",
 	"scripts": {
