@@ -29,11 +29,5 @@
 		"noUnusedParameters": false,
 		"noPropertyAccessFromIndexSignature": false
 	},
-	"include": [
-		"src",
-		"utils",
-		"vite.config.base.ts",
-		"vite.config.chrome.ts",
-		"vite.config.firefox.ts"
-	]
+	"include": ["src", "utils", "vite.config.ts"]
 }
