@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		// Environment setup & latest features
+		"lib": ["ESNext", "DOM"],
+		"baseUrl": ".",
+		"paths": {
+			"@src/*": ["src/*"],
+			"@assets/*": ["src/assets/*"],
+			"@pages/*": ["src/pages/*"]
+		},
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleDetection": "force",
+		"jsx": "react-jsx",
+		"allowJs": true,
+		// Bundler mode
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true,
+		"noEmit": true,
+		"outDir": "./dist",
+		// Best practices
+		"strict": true,
+		"skipLibCheck": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		// Some stricter flags (disabled by default)
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noPropertyAccessFromIndexSignature": false
+	},
+	"include": [
+		"src",
+		"utils",
+		"vite.config.base.ts",
+		"vite.config.chrome.ts",
+		"vite.config.firefox.ts"
+	]
+}

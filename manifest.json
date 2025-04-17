@@ -1,0 +1,55 @@
+{
+	"manifest_version": 3,
+	"name": "HB Sailing Companion",
+	"version": "1.0",
+	"description": "Enhance the HB Sailing website.",
+	"permissions": ["activeTab"],
+	"host_permissions": ["https://www.hbsailing.com/*"],
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; object-src 'self'"
+	},
+	"options_ui": {
+		"page": "src/pages/options/index.html"
+	},
+	"action": {
+		"default_title": "HB Sailing Companion",
+		"default_popup": "src/pages/popup/index.html",
+		"default_icon": {
+			"16": "icon-16.png",
+			"32": "icon-32.png",
+			"48": "icon-48.png",
+			"128": "icon-128.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://www.hbsailing.com/*"],
+			"js": ["src/pages/content/index.tsx"],
+			"css": ["src/pages/content/content.css"]
+		}
+	],
+	"background": {
+		"service_worker": "src/pages/background/index.ts",
+		"type": "module"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["assets/*"],
+			"matches": ["https://www.hbsailing.com/*"]
+		}
+	],
+	"icons": {
+		"16": "icon-16.png",
+		"32": "icon-32.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"commands": {
+		"refresh_extension": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+R"
+			},
+			"description": "Refresh extension"
+		}
+	}
+}
