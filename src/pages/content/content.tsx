@@ -1,10 +1,10 @@
 import './content.css'
+import { WindWidget } from '@components/widgets/wind'
 
 export function Content() {
 	return (
-		<div className="container bg-green-300 p-4 rounded-lg shadow-lg ">
-			<h1 className="font-extrabold text-green-300">Hello world!!!!</h1>
-			<p>Welcome to the React app.@X</p>
+		<div className=" border border-zinc-700 p-4 rounded-lg shadow-lg ">
+			<WindWidget degrees={280} speedKnots={10} gustKnots={15} />
 		</div>
 	)
 }

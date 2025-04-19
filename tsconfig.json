@@ -6,7 +6,8 @@
 		"paths": {
 			"@src/*": ["src/*"],
 			"@assets/*": ["src/assets/*"],
-			"@pages/*": ["src/pages/*"]
+			"@pages/*": ["src/pages/*"],
+			"@components/*": ["src/components/*"]
 		},
 		"target": "ESNext",
 		"module": "ESNext",
