@@ -14,8 +14,10 @@
 		"dev": "nodemon --config nodemon.json",
 		"dev:chrome": "cross-env BROWSER=chrome nodemon --config nodemon.json",
 		"dev:firefox": "cross-env BROWSER=firefox nodemon --config nodemon.json",
-		"lint": "biome lint --fix",
-		"format": "biome format --fix",
+		"lint": "biome lint",
+		"format": "biome format",
+		"check": "biome check",
+		"check:fix": "biome check --fix",
 		"report": "biome check --reporter=summary"
 	},
 	"devDependencies": {
