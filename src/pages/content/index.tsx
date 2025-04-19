@@ -11,7 +11,7 @@ const anchor = document.getElementsByClassName('rbm_All')[0]
 if (!anchor) {
 	throw new Error('No anchor element found')
 }
-anchor.appendChild(root)
+anchor.insertAdjacentElement('beforebegin', root)
 const rootDiv = ReactDOM.createRoot(root)
 rootDiv.render(
 	<React.StrictMode>
